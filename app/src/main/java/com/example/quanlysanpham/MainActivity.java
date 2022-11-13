@@ -27,6 +27,8 @@ import java.util.Scanner;
 /*
 new adapter chỉ có string thì item_danh_muc k bọc bởi layout
 -> chỉ có TextView trong layout
+
+nhớ thêm dòng code xin phép ghi file SDCard trong manifest
  */
 public class MainActivity extends AppCompatActivity {
     EditText edtmasp,edttensp,edtsoluong;
@@ -166,6 +168,7 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(this, "+"+masp+"-"+tensp+"--"+count+"--"+spinnerClick, Toast.LENGTH_LONG).show();
         arrayListSP.add(sp);
         adapterSP.notifyDataSetChanged();
+        edtmasp.requestFocus();
     }
     // function sua san pham
     public void suahangFunc()
@@ -208,6 +211,7 @@ public class MainActivity extends AppCompatActivity {
             Log.e("GhiFile",e.toString());
         }
     }
+    // doc danh sach tu the nho
     public void docdanhsach()
     {
         String sdcard=this.getExternalFilesDir(null).getAbsolutePath()+"/DanhSachHang.txt";
