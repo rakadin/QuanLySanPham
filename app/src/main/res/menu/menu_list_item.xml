@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Thêm hàng"
+        android:id="@+id/themhang"/>
+    <item android:title="Sửa hàng"
+        android:id="@+id/suahang">
+    </item>
+    <item android:title="Xóa hàng"
+        android:id="@+id/xoahang"/>
+    <item android:title="Lưu DS hàng vào file"
+        android:id="@+id/luuds"/>
+    <item android:title="Đọc DS hàng vào file"
+        android:id="@+id/docds">
+        <menu >
+            <item android:title="Menu Item 2.1" />
+            <item android:title="Menu Item 2.2" />
+        </menu>
+    </item>
+    <item android:title="Đóng"
+        android:id="@+id/dong">
+
+    </item>
+</menu>
