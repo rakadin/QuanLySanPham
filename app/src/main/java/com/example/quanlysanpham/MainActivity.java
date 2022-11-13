@@ -168,7 +168,7 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(this, "+"+masp+"-"+tensp+"--"+count+"--"+spinnerClick, Toast.LENGTH_LONG).show();
         arrayListSP.add(sp);
         adapterSP.notifyDataSetChanged();
-        edtmasp.requestFocus();
+        edtmasp.requestFocus();// cái này dùng để đưa con trỏ về edt cần trỏ vào
     }
     // function sua san pham
     public void suahangFunc()
